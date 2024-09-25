@@ -1,0 +1,18 @@
+[package]
+name = "cushy-clicker"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+cushy = { git = "https://github.com/khonsulabs/cushy" }
+approximint = { git = "https://github.com/khonsulabs/approximint" }
+parking_lot = "0.12.3"
+
+[lints.clippy]
+pedantic = { level = "warn", priority = -1 }
+missing_errors_doc = "allow"
+missing_panics_doc = "allow"
+
+[lints.rust]
+unsafe_code = "forbid"
+missing_docs = "warn"
